@@ -1,0 +1,325 @@
+/**
+ *	Implemented some new CSS3 properties.
+ *	@author HsiHo Huang
+ *	@version 1.0
+ */
+ 
+@font-face{
+	font-family: "Reenie Beanie";
+	src: url('Reenie Beanie.ttf') format("truetype");
+ 	font-style: normal;
+  	font-weight: normal;  
+}
+
+p{
+	font-family:Helvetica, Arial, sans-serif; 
+	font-size:50px;
+}
+
+a:hover {
+	text-shadow: 0 0 .5em white, 0 0 1em white;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family:Helvetica, Arial, sans-serif; 
+	text-shadow: 5px 5px 5px HotPink;
+	font-size:40px;
+/*	font-size:1in;*/
+	margin-top:1em;
+}
+
+#intro h1 {
+	font-size:280px;
+	position:absolute; 
+	margin-top:0.4em;
+	left:40px;
+}
+
+	#intro h1 .version {
+		font-size: 65%;
+		vertical-align: text-top;
+	}	
+
+.font-type{
+	font-family: Reenie Beanie; 
+}
+
+#outline{
+	font-family:Helvetica, Arial, sans-serif; 
+	font-size:40px;
+	text-shadow: 5px 5px 5px DodgerBlue ;
+	margin-top:1em;
+}
+
+.slide > ul {
+	list-style:none;	
+}
+
+.slide ol {
+	margin-left:2em;	
+}
+	
+	.slide > ul ul {
+		margin-left:2em;	
+		list-style: none;
+	}
+	
+		.slide li li {
+			font-size:80%;
+		}
+	
+	.slide > ul > li:before {
+		content:'\2714';
+		color: #7d0;
+		padding-right: .2em;
+	}
+	
+		.slide li li:before {
+			content: '\279C';
+			color: #1af;
+			padding-right: .2em;
+		}
+#font{
+	font-size:100px;
+	margin-left:3em;
+}
+		
+#simple-border{
+	font-size:18px;
+	width: 19em; 
+	border:1px solid #000000;
+	word-break: break-all;
+	position:absolute;
+	margin-left: 3em;
+}
+
+.border{
+	font-size:20px;
+	border:2px solid #a1a1a1;
+	padding:10px 40px;
+	position:absolute;
+}
+
+#border1{
+	background:#dddddd;
+	width:300px;
+	border-radius:25px;
+	top: 200px;
+	left: 500px;
+	box-shadow: 10px 10px 30px Yellow inset ;
+	outline: 5px solid red;
+}
+
+#border2{ 
+	background:#00dddd;
+	width:300px;
+	border-radius:60px 10px;
+	top: 300px;
+	left: 7px;
+	box-shadow: 10px 10px 20px Orange ;
+}
+
+#border3{
+	background:#0dd00d;
+	width:120px;
+	border-radius:50% 50% 0 ;
+	top: 300px;
+	left: 500px;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+
+#border4{	
+	background:HotPink;
+	width:300px;
+	word-wrap: non;
+	border-radius:40px 40% 0 10px;	
+	top: 450px;
+	left: 7px;
+	linear-gradient:(#f09,black);
+}
+
+#image-border{
+	padding:15px 20px; 
+	width:100px;
+	top: 450px;
+	left: 500px;
+	-webkit-border-image:url(border.png) 30 30 round; /* Chrome, Safari, Opera */
+}
+
+#image{
+	position:absolute;
+	top:480px;
+	left: 800px;
+}
+
+.transform{
+	font-size:30px;
+	width:200px;
+	height:60px;
+	background-color:99FFFF ;
+	border:1px solid DodgerBlue ;
+	position:absolute;
+	top:200x;
+	left: 7px;
+	border-radius:10px;
+}
+
+#transf1{/* Chrome, Safari, Opera */
+	-webkit-transform:translate(50px,100px);
+}
+
+#transf2{/* Chrome, Safari, Opera */
+	-webkit-transform:rotate(30deg); 
+	position:absolution; 
+	top:180px; 
+	left:220px; 
+}
+
+#transf3{/* Chrome, Safari, Opera */
+	-webkit-transform:scale(2,3); 
+	position:absolution; 
+	top:200px; 
+	left:600px;
+}
+
+#transf4{/* Chrome, Safari, Opera */
+	-webkit-transform:skew(30deg,20deg);
+	position:absolution; 
+	top:200px; 
+	left:1000px; 
+}
+
+#transf5{/* Chrome, Safari, Opera */
+	-webkit-transform:scale(2,3); 
+	position:absolution; 
+	top:200px; 
+	left:600px; 
+	-webkit-box-reflect: below 1px;
+}
+
+#transition1{
+	width:100px;
+	height:100px;
+	background:Pink;
+	transition:width 2s;
+	-moz-transition:width 2s; /* Firefox 4 */
+	-webkit-transition:width 2s; /* Safari and Chrome */
+	-o-transition:width 2s; /* Opera */
+	position:absolute;
+	left:7px;
+	top:400px;
+	border-radius:10px;
+}
+
+#transition1:hover{
+	width:300px;
+}
+
+.animated_div{
+	width:100px;
+	height:80px;
+	background:#92B901;
+	color:#ffffff;
+	position:absolute;
+	font-weight:bold;
+	font-size:30px;
+	padding:10px;
+	float:left;
+	margin:5px;
+	-webkit-transition:-webkit-transform 1s,opacity 1s,background 1s,width 1s,height 1s,font-size 1s;
+	-webkit-border-radius:5px;
+	-o-transition-property:width,height,-o-transform,background,font-size,opacity;
+	-o-transition-duration:1s,1s,1s,1s,1s,1s;
+	-moz-transition-property:width,height,-o-transform,background,font-size,opacity;
+	-moz-transition-duration:1s,1s,1s,1s,1s,1s;
+	transition-property:width,height,transform,background,font-size,opacity;
+	transition-duration:1s,1s,1s,1s,1s,1s;
+	border-radius:5px;
+	opacity:0.4;
+}
+
+.animated_div:hover{
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	transform: rotate(360deg);
+	opacity:1;
+	background:#1ec7e6;
+	width:200px;
+	height:200px;
+	font-size:40px;
+}
+
+#animated_div{
+	width:100px;
+	height:80px;
+	background:#92B901;
+	color:#ffffff;
+	position:relative;
+	font-weight:bold;
+	font-size:30px;
+	padding:10px;
+	animation:animated_div 5s 1;
+	-moz-animation:animated_div 5s 1;
+	-webkit-animation:animated_div 5s 1;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	left:7px;
+}
+
+@-webkit-keyframes animated_div{/* Chrome, Safari, Opera */
+	0%	{-webkit-transform: rotate(0deg);left:0px;}
+	25%	{-webkit-transform: rotate(20deg);left:0px;}
+	50%	{-webkit-transform: rotate(0deg);left:500px;}
+	55%	{-webkit-transform: rotate(0deg);left:500px;}
+	70%	{-webkit-transform: rotate(0deg);left:500px;background:#1ec7e6;}
+	100%{-webkit-transform: rotate(-360deg);left:0px;}
+}
+
+#animation1{
+	width:100px;
+	height:100px;
+	background:red;
+	position:relative;
+	animation:my_animation 5s;
+	-moz-animation:my_animation 5s; /* Firefox */
+	-webkit-animation:my_animation 5s; /* Chrome, Safari, Opera */
+	left:7px;
+}
+
+@-webkit-keyframes my_animation{/* Chrome, Safari, Opera */
+	0%   {background:red; left:0px; top:0px;}
+	25%   {background:yellow; left:200px; top:0px;}
+	50%   {background:blue; left:200px; top:200px;}
+	75%   {background:green; left:0px; top:200px;}
+	100% {background:red; left:0px; top:0px;}
+}
+		
+#newspaper{
+	font-size:14px;
+	-moz-column-count:3; /* Firefox */
+	-webkit-column-count:3; /* Chrome, Safari, Opera */
+	column-count:3;
+
+	-moz-column-gap:40px; /* Firefox */
+	-webkit-column-gap:40px; /* Chrome, Safari, Opera */
+	column-gap:40px;
+
+	-moz-column-rule:4px outset #ff00ff; /* Firefox */
+	-webkit-column-rule:4px outset #ff00ff; /* Chrome, Safari, Opera */
+	column-rule:4px outset #ff00ff;
+	padding:30px;
+	width:800px;
+}
+
+#user-interface{
+	border:2px solid;
+	padding:30px; 
+	width:300px;
+	resize:both;
+	overflow:auto;
+	position:absolute;
+	left:30px;
+	font-size:16px;
+}
