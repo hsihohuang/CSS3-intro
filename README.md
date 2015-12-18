@@ -2,4 +2,4 @@
 
 ### Css-based slideshow for CSS3 introduction
 
-Warning: Only works in Chrome, Safari and Opera.
+Warning : Only works in Chrome, Safari and Opera.
