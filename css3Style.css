@@ -83,6 +83,11 @@ h1,h2,h3,h4,h5,h6{
 	font-size:100px;
 	margin-left:3em;
 }
+
+#mouse-hint{
+	font-size:30px;
+	margin-left:9em;
+}
 		
 #simple-border{
 	font-size:18px;
@@ -141,7 +146,7 @@ h1,h2,h3,h4,h5,h6{
 
 #image-border{
 	padding:15px 20px; 
-	width:100px;
+	width:170px;
 	top: 450px;
 	left: 500px;
 	-webkit-border-image:url(border.png) 30 30 round; /* Chrome, Safari, Opera */
@@ -208,7 +213,7 @@ h1,h2,h3,h4,h5,h6{
 	-o-transition:width 2s; /* Opera */
 	position:absolute;
 	left:7px;
-	top:400px;
+	top:500px;
 	border-radius:10px;
 }
 
