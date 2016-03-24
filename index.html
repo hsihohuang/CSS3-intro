@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>CSS3 presentation</title>
+
+	<link href="slideshow.css" rel="stylesheet" type="text/css" />
+	<link href="css3Style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+	<header id="intro" class="slide">
+		<hgroup>
+			<h1 class="font-type">CSS<span class="version">3</span></h1>
+		</hgroup>
+	</header>
+
+	<div class="slide">
+		<h3 id="outline">NEW</h3>
+		<ul>
+			<li class="delayed">Fonts</li>
+			<li class="delayed">Text Effects</li>
+			<li class="delayed">Borders</li>
+			<li class="delayed">Transforms</li>
+			<li class="delayed">Transitions</li>
+			<li class="delayed">Animations</li>
+			<li class="delayed">Multiple Columns</li>
+			<li class="delayed">User Interface</li>
+			<h1 class="font-type"><a href="http://www.w3schools.com/css3/default.asp">W3CSchool</a></h1>
+	  </ul>
+	</div>
+
+	<section id="problem1">
+	<div class="slide" id="problem1-images">
+		<hgroup>
+			<h5>FONTS</h5>
+		</hgroup>
+		<p class="font-type" id="font">Hi!! I am HsiHo Huang. :) </br>Nice to meet you!!</p>
+	</div>
+	
+	<div class="slide">
+		<hgroup>
+			<h5>Text Effects & Borders</h5>
+		</hgroup>
+		<p id="simple-border" class="delayed">Text with word-break-all. e.g. I loooooooooooooove music, reading, programming, English, cooking and travelling!!.</p>
+        
+		<div id="border1" class="border delayed"> The 1st Text Effect & Border </div>
+		<div id="border2" class="border delayed"> The 2nd Text Effect & Border </div>
+		<div id="border3" class="border delayed"> The 3rd Text Effect & Border </div>
+		<div id="border4" class="border delayed"> The 4th Text Effect & Border with no word-wrap. e.g. 4thTextEffect&Border4thTextEffect&Border 4th Text Effect & Border</div>
+		<div id="image-border" class="border delayed"> The 5th Text Effect & Border </div>
+		<img src="border.png"  id="image" class="delayed"/>    
+	</div>
+	
+	<div class="light slide">
+	  <hgroup>
+		<h5>Transform</h5>
+      </hgroup>
+         
+		<div class="transform delayed" >  Normal !!!</div>
+		<div id= "transf1" class="transform delayed">  Transform !!!</div>
+		<div id= "transf2" class="transform delayed">  Transform !!!</div>
+		<div id= "transf3" class="transform delayed">  Transform !!!</div>
+		<div id= "transf4" class="transform delayed">  Transform !!!</div>
+		<div id= "transf5" class="transform delayed">  Transform !!!</div>
+	</div>
+    
+    <div class="light slide">
+		<hgroup>
+			<h5>Transition</h5>
+		</hgroup>
+    	<div class="animated_div">HsiHo<br /><span style="font-size:50%;">HsiHo Huang</span></div>
+		<div id="transition1"></div>        
+	</div>
+    
+    <div class="light slide">
+		<hgroup>
+			<h5>Animations</h5>
+		</hgroup>
+   		<div id="animation1"></div>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+    	<div id="animated_div">HsiHo<br/><span style="font-size:10px;">Smile</span></div>        
+	</div>
+    
+    <div class="light slide">
+		<hgroup>
+			<h5>Multiple Columns</h5>
+		</hgroup>
+		<div id="newspaper">
+			It allows easy definition of multiple columns of text - just like in newspapers. It allows easy definition of multiple columns of text - just like in newspapers. It allows easy definition of multiple columns of text - just like in newspapers. It allows easy definition of multiple columns of text - just like in newspapers. It allows easy definition of multiple columns of text - just like in newspapers. It allows easy definition of multiple columns of text - just like in newspapers. It allows easy definition of multiple columns of text - just like in newspapers. It allows easy definition of multiple columns of text - just like in newspapers. It allows easy definition of multiple columns of text - just like in newspapers. It allows easy definition of multiple columns of text - just like in newspapers. It allows easy definition of multiple columns of text - just like in newspapers. 
+		</div>      
+	</div>
+    
+    <div class="light slide">
+		<hgroup>
+			<h5>User Interface</h5>
+		</hgroup>
+		<div id="user-interface">
+			You can resize both the height and the width of this div element !!! :D 
+		</div>      
+	</div>
+    
+    <div class=" slide">
+		<h1 class="font-type" style="font-size:150px; position:absolute; top:100px; left:40px;">Thank you!</h1>
+    </div>
+
+	<script src="slideshow.js"></script>
+	<script>
+		var slideshow = new SlideShow();
+	</script>
+</body>
+</html>
